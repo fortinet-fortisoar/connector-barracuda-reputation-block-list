@@ -1,0 +1,39 @@
+{
+    "name": "baracuddaRBL",
+    "version": "1.0.0",
+    "label": "Baracudda - DNS RBL",
+    "description": "IP Domain reputation lookup in Baracudda",
+    "publisher": "Fortinet",
+    "icon_small_name": "barracuda_32x32.png",
+    "icon_large_name": "barracuda_80X80.png",
+    "category": "Service Management/Ticketing System",
+    "configuration": {
+    },
+    "operations": [
+        {
+            "operation": "IP_Domain_rbllookup",
+            "category": "TIP",
+            "annotation": "IP_Domain_rbllookup",
+            "output_schema": {},
+            "title": "Lookup IP from Baracudda RBL",
+            "description": "Lookup IP from Baracudda RBL as DNS Query",
+            "enabled": true,
+            "parameters": [
+                {
+                    "title": "Lookup IP V4 only",
+                    "type": "text",
+                    "name": "iplookup",
+                    "required": true,
+                    "visible": true,
+                    "editable": true,
+                    "tooltip": "Lookup IP from Baracudda RBL"
+                }
+            ],
+            "open": false
+        }
+    ],
+    "forked_from": false,
+    "cs_approved": true,
+    "cs_compatible": true,
+    "help_online": ""
+}
