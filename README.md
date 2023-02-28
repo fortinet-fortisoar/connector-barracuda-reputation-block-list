@@ -6,9 +6,11 @@ More information:
 •	End-user has to configure their DNS servers in FortiSOAR system.
 •	This connector does not take any configuration.
 
-![image](https://user-images.githubusercontent.com/764987/221804624-3eeaea84-2f32-41f5-9ef4-b97fae87b996.png)
+![image](https://user-images.githubusercontent.com/764987/221806090-52bf30ac-479c-4525-8170-3011a9d78bcf.png)
+![image](https://user-images.githubusercontent.com/764987/221806296-48053bd4-d5c9-4c31-b615-9c4d2ee4d345.png)
+![image](https://user-images.githubusercontent.com/764987/221806366-f0b27f9c-82b5-416b-a0c6-77ac02186f2d.png)
+![image](https://user-images.githubusercontent.com/764987/221806673-3a0c5850-e857-4423-bd54-9fd50f535892.png)
+![image](https://user-images.githubusercontent.com/764987/221806826-02b79f12-4038-40dc-b3b9-04cfa13240bf.png)
+![image](https://user-images.githubusercontent.com/764987/221806934-3fa822f2-45b6-4651-8e65-a5a1863948f8.png)
 
-![image](https://user-images.githubusercontent.com/764987/221804677-12cae02c-53d6-46ff-b8dc-e2e6af924f9f.png)
-
-![image](https://user-images.githubusercontent.com/764987/221804733-b8b13704-b202-4ba3-90d4-4a5db4611d45.png)
 
