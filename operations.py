@@ -37,7 +37,9 @@ def IP_Domain_rbllookup(config, params):
             else:
                 data = {'Address': ip,
                         'Malicious': False}  
-                return data        
+                return data
+	else:
+	    return "Invalid Input"
             
     except Exception as e:
         return (f'Error from Barracuda - {str(e)}.')
