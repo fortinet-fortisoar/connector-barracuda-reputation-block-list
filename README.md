@@ -3,8 +3,11 @@
 More information:
 
 •	How it works: Baracudda RBL is free for all, provided end user’s DNS address has to be register with Baracudda. Web Reference - https://barracudacentral.org/account/register
+
 •	Connector is required to be configured with a DNS IP address.
+
 •	Configured DNS server must be reachable from FortiSOAR over UDP 53.
+
 •	Support both IPv4 and IPv6 DNS queries.
 
 Screenshots:
