@@ -30,7 +30,7 @@
             "enabled": true,
             "parameters": [
                 {
-                    "title": "Lookup IP V4 only",
+                    "title": "Lookup IPv4 or IPv6",
                     "type": "text",
                     "name": "iplookup",
                     "required": true,
