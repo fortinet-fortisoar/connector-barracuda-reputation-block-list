@@ -1,10 +1,8 @@
 from connectors.core.connector import get_logger, ConnectorError
 import dns.resolver
-from ipaddress import ip_address
+from ipaddress import ip_address, IPv4Address
 
 logger = get_logger('baracuddaRBL')
-
-from ipaddress import ip_address, IPv4Address
 
 def validIPAddress(IP: str) -> str:
 	try:
