@@ -6,8 +6,18 @@
     "publisher": "Fortinet",
     "icon_small_name": "barracuda_32x32.png",
     "icon_large_name": "barracuda_80X80.png",
-    "category": "Service Management/Ticketing System",
+    "category": "TIP",
     "configuration": {
+        "fields": [
+            {
+                "title": "DNS Server IP Addess",
+                "type": "text",
+                "name": "dnsServerIP",
+                "required": true,
+                "visible": true,
+                "editable": true
+            }
+        ]
     },
     "operations": [
         {
