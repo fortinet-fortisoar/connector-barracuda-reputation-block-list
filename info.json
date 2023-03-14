@@ -23,7 +23,7 @@
         {
             "operation": "IP_Domain_rbllookup",
             "category": "investigation",
-            "annotation": "IP_Domain_rbllookup",
+            "annotation": "ip_domain_rbllookup",
             "output_schema": {},
             "title": "Lookup IP from Baracudda RBL",
             "description": "Lookup IP from Baracudda RBL as DNS Query",
