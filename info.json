@@ -22,7 +22,7 @@
     "operations": [
         {
             "operation": "IP_Domain_rbllookup",
-            "category": "TIP",
+            "category": "investigation",
             "annotation": "IP_Domain_rbllookup",
             "output_schema": {},
             "title": "Lookup IP from Baracudda RBL",
