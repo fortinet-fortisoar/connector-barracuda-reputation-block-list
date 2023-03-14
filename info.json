@@ -24,7 +24,10 @@
             "operation": "IP_Domain_rbllookup",
             "category": "investigation",
             "annotation": "ip_domain_rbllookup",
-            "output_schema": {},
+            "output_schema": {
+                "Address": "",
+                "Malicious": ""
+            },
             "title": "Get IP Reputation",
             "description": "Lookup IP from Baracudda RBL as DNS Query",
             "enabled": true,
