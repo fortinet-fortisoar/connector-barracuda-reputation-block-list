@@ -1,0 +1,52 @@
+{
+    "name": "baracuddaRBL",
+    "version": "1.0.0",
+    "label": "Baracudda Reputation Block List",
+    "description": "IP Domain reputation lookup in Baracudda",
+    "publisher": "Fortinet",
+    "icon_small_name": "barracuda_32x32.png",
+    "icon_large_name": "barracuda_80X80.png",
+    "category": "Threat Intelligence",
+    "configuration": {
+        "fields": [
+            {
+                "title": "DNS Server IP Addess",
+                "type": "text",
+                "name": "dnsServerIP",
+                "required": true,
+                "visible": true,
+                "editable": true
+            }
+        ]
+    },
+    "operations": [
+        {
+            "operation": "IP_Domain_rbllookup",
+            "category": "investigation",
+            "annotation": "ip_domain_rbllookup",
+            "output_schema": {
+                "Address": "",
+                "Malicious": ""
+            },
+            "title": "Get IP Reputation",
+            "description": "Lookup IP from Baracudda RBL as DNS Query",
+            "enabled": true,
+            "parameters": [
+                {
+                    "title": "Lookup IPv4 or IPv6",
+                    "type": "text",
+                    "name": "iplookup",
+                    "required": true,
+                    "visible": true,
+                    "editable": true,
+                    "tooltip": "Lookup IP from Baracudda RBL"
+                }
+            ],
+            "open": false
+        }
+    ],
+    "forked_from": false,
+    "cs_approved": true,
+    "cs_compatible": true,
+    "help_online": ""
+}
