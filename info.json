@@ -1,7 +1,7 @@
 {
     "name": "baracuddaRBL",
     "version": "1.0.0",
-    "label": "Baracudda - DNS RBL",
+    "label": "Baracudda Reputation Block List",
     "description": "IP Domain reputation lookup in Baracudda",
     "publisher": "Fortinet",
     "icon_small_name": "barracuda_32x32.png",
