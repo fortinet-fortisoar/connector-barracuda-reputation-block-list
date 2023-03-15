@@ -1,0 +1,99 @@
+{
+  "type": "workflow_collections",
+  "data": [
+    {
+      "uuid": "abbcef44-1a45-4893-9eb4-9c2263bdfd23",
+      "@type": "WorkflowCollection",
+      "name": "Sample - Baracudda Reputation Block List - 1.0.0",
+      "description": "Barracuda Reputation System is a real-time database of IP addresses that have a \"poor\" reputation for sending valid emails. Barracuda Central maintains and manually verifies all IP addresses marked as \"poor\" on the Barracuda Reputation System.",
+      "visible": true,
+      "image": null,
+      "recordTags": [
+        "Barracuda",
+        "barracuda-reputation-block-list"
+      ],
+      "workflows": [
+        {
+          "@type": "Workflow",
+          "uuid": "5f30bc51-69bf-4dc2-b072-d96398778854",
+          "collection": "/api/3/workflow_collections/abbcef44-1a45-4893-9eb4-9c2263bdfd23",
+          "triggerLimit": null,
+          "description": "Uploads a IP to Barracuda Reputation System and retrieves the analysis results.",
+          "name": "Get IP Reputation",
+          "tag": "#Baracudda Reputation Block List",
+          "recordTags": [
+            "Barracuda",
+            "barracuda-reputation-block-list"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/95f1885e-30c0-45ec-b0cc-2ad90b02e714",
+          "steps": [
+            {
+              "uuid": "95f1885e-30c0-45ec-b0cc-2ad90b02e714",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "route": "685b8127-27b5-4356-a7bd-f547a260ade3",
+                "title": "Baracudda Reputation Block List: Get IP Reputation",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "records": "{{vars.input.records[0]}}"
+                  }
+                },
+                "singleRecordExecution": false,
+                "noRecordExecution": true,
+                "executeButtonText": "Execute"
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a"
+            },
+            {
+              "uuid": "60cb5a1c-1fa1-449d-8ba2-2646607100eb",
+              "@type": "WorkflowStep",
+              "name": "Get IP Reputation",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Baracudda Reputation Block List",
+                "config": "''",
+                "params": [],
+                "version": "1.0.0",
+                "connector": "barracuda-reputation-block-list",
+                "operation": "get_ip_reputation",
+                "operationTitle": "Get IP Reputation",
+                "step_variables": {
+                  "output_data": "{{vars.result}}"
+                }
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "uuid": "b85a56af-5728-4273-a7a4-f1ce54be2abc",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get IP Reputation",
+              "sourceStep": "/api/3/workflow_steps/95f1885e-30c0-45ec-b0cc-2ad90b02e714",
+              "targetStep": "/api/3/workflow_steps/60cb5a1c-1fa1-449d-8ba2-2646607100eb"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

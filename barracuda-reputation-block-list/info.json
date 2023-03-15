@@ -1,52 +1,52 @@
 {
-    "name": "baracuddaRBL",
-    "version": "1.0.0",
-    "label": "Baracudda Reputation Block List",
-    "description": "IP Domain reputation lookup in Baracudda",
-    "publisher": "Fortinet",
-    "icon_small_name": "barracuda_32x32.png",
-    "icon_large_name": "barracuda_80X80.png",
-    "category": "Threat Intelligence",
-    "configuration": {
-        "fields": [
-            {
-                "title": "DNS Server IP Addess",
-                "type": "text",
-                "name": "dnsServerIP",
-                "required": true,
-                "visible": true,
-                "editable": true
-            }
-        ]
-    },
-    "operations": [
+  "name": "barracuda-reputation-block-list",
+  "version": "1.0.0",
+  "label": "Baracudda Reputation Block List",
+  "description": "Barracuda Reputation System is a real-time database of IP addresses that have a poor reputation for sending valid emails. Barracuda Central maintains and manually verifies all IP addresses marked as \"poor\" on the Barracuda Reputation System.",
+  "publisher": "Fortinet",
+  "cs_approved": false,
+  "cs_compatible": true,
+  "icon_small_name": "small.png",
+  "icon_large_name": "large.png",
+  "category": "Threat Intelligence",
+  "help_online": "",
+  "configuration": {
+    "fields": [
+      {
+        "title": "DNS Server IP Address",
+        "type": "text",
+        "name": "dnsServerIP",
+        "required": true,
+        "visible": true,
+        "editable": true,
+        "description": "Specify the DNS Server IP Address"
+      }
+    ]
+  },
+  "operations": [
+    {
+      "title": "Get IP Reputation",
+      "operation": "get_ip_reputation",
+      "category": "investigation",
+      "annotation": "get_ip_reputation",
+      "description": "Uploads a IP to Barracuda Reputation System and retrieves the analysis results.",
+      "enabled": true,
+      "parameters": [
         {
-            "operation": "IP_Domain_rbllookup",
-            "category": "investigation",
-            "annotation": "ip_domain_rbllookup",
-            "output_schema": {
-                "Address": "",
-                "Malicious": ""
-            },
-            "title": "Get IP Reputation",
-            "description": "Lookup IP from Baracudda RBL as DNS Query",
-            "enabled": true,
-            "parameters": [
-                {
-                    "title": "Lookup IPv4 or IPv6",
-                    "type": "text",
-                    "name": "iplookup",
-                    "required": true,
-                    "visible": true,
-                    "editable": true,
-                    "tooltip": "Lookup IP from Baracudda RBL"
-                }
-            ],
-            "open": false
+          "title": "Lookup IPv4 Or IPv6",
+          "type": "text",
+          "name": "iplookup",
+          "required": true,
+          "visible": true,
+          "editable": true,
+          "tooltip": "The IP to scan.",
+          "description": "Specify the IP for which you want to retrieve the reputation information."
         }
-    ],
-    "forked_from": false,
-    "cs_approved": true,
-    "cs_compatible": true,
-    "help_online": ""
+      ],
+      "output_schema": {
+        "Address": "",
+        "Malicious": ""
+      }
+    }
+  ]
 }
