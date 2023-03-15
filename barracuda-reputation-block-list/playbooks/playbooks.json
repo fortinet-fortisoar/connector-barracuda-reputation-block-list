@@ -2,10 +2,10 @@
   "type": "workflow_collections",
   "data": [
     {
-      "uuid": "abbcef44-1a45-4893-9eb4-9c2263bdfd23",
+      "uuid": "93f28e17-91b2-47fa-88cf-29f2091f26da",
       "@type": "WorkflowCollection",
-      "name": "Sample - Baracudda Reputation Block List - 1.0.0",
-      "description": "Barracuda Reputation System is a real-time database of IP addresses that have a \"poor\" reputation for sending valid emails. Barracuda Central maintains and manually verifies all IP addresses marked as \"poor\" on the Barracuda Reputation System.",
+      "name": "Sample - Barracuda Reputation Block List - 1.0.0",
+      "description": "Barracuda Reputation System is a real-time database of IP addresses that have a poor reputation for sending valid emails. Barracuda Central maintains and manually verifies all IP addresses marked as \"poor\" on the Barracuda Reputation System.",
       "visible": true,
       "image": null,
       "recordTags": [
@@ -15,12 +15,12 @@
       "workflows": [
         {
           "@type": "Workflow",
-          "uuid": "5f30bc51-69bf-4dc2-b072-d96398778854",
-          "collection": "/api/3/workflow_collections/abbcef44-1a45-4893-9eb4-9c2263bdfd23",
+          "uuid": "58708dfe-083c-4881-a714-9356241a0cf7",
+          "collection": "/api/3/workflow_collections/93f28e17-91b2-47fa-88cf-29f2091f26da",
           "triggerLimit": null,
           "description": "Uploads a IP to Barracuda Reputation System and retrieves the analysis results.",
           "name": "Get IP Reputation",
-          "tag": "#Baracudda Reputation Block List",
+          "tag": "#Barracuda Reputation Block List",
           "recordTags": [
             "Barracuda",
             "barracuda-reputation-block-list"
@@ -30,17 +30,17 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/95f1885e-30c0-45ec-b0cc-2ad90b02e714",
+          "triggerStep": "/api/3/workflow_steps/f9ff5d58-a54b-42b9-ae67-93b4f85a3575",
           "steps": [
             {
-              "uuid": "95f1885e-30c0-45ec-b0cc-2ad90b02e714",
+              "uuid": "f9ff5d58-a54b-42b9-ae67-93b4f85a3575",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
               "status": null,
               "arguments": {
-                "route": "685b8127-27b5-4356-a7bd-f547a260ade3",
-                "title": "Baracudda Reputation Block List: Get IP Reputation",
+                "route": "fe228649-1248-45dc-93a2-8e9c84e38d36",
+                "title": "Barracuda Reputation Block List: Get IP Reputation",
                 "resources": [
                   "alerts"
                 ],
@@ -59,13 +59,13 @@
               "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a"
             },
             {
-              "uuid": "60cb5a1c-1fa1-449d-8ba2-2646607100eb",
+              "uuid": "9ca33dfa-7129-4a15-956e-be091091b1c6",
               "@type": "WorkflowStep",
               "name": "Get IP Reputation",
               "description": null,
               "status": null,
               "arguments": {
-                "name": "Baracudda Reputation Block List",
+                "name": "Barracuda Reputation Block List",
                 "config": "''",
                 "params": [],
                 "version": "1.0.0",
@@ -84,12 +84,12 @@
           "routes": [
             {
               "@type": "WorkflowRoute",
-              "uuid": "b85a56af-5728-4273-a7a4-f1ce54be2abc",
+              "uuid": "4339c481-0364-49b5-85a7-616133c84437",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get IP Reputation",
-              "sourceStep": "/api/3/workflow_steps/95f1885e-30c0-45ec-b0cc-2ad90b02e714",
-              "targetStep": "/api/3/workflow_steps/60cb5a1c-1fa1-449d-8ba2-2646607100eb"
+              "sourceStep": "/api/3/workflow_steps/f9ff5d58-a54b-42b9-ae67-93b4f85a3575",
+              "targetStep": "/api/3/workflow_steps/9ca33dfa-7129-4a15-956e-be091091b1c6"
             }
           ]
         }
