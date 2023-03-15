@@ -1,7 +1,7 @@
 {
   "name": "barracuda-reputation-block-list",
   "version": "1.0.0",
-  "label": "Baracudda Reputation Block List",
+  "label": "Barracuda Reputation Block List",
   "description": "Barracuda Reputation System is a real-time database of IP addresses that have a poor reputation for sending valid emails. Barracuda Central maintains and manually verifies all IP addresses marked as \"poor\" on the Barracuda Reputation System.",
   "publisher": "Fortinet",
   "cs_approved": false,
