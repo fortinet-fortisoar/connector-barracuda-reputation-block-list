@@ -11,6 +11,5 @@ class baracuddaRBL(Connector):
         action = operations.get(operation)
         return action(config, params)
 
-
     def check_health(self, config):
         check_health(config)
