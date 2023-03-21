@@ -1,6 +1,7 @@
 ## About the connector
 Barracuda Reputation System is a real-time database of IP addresses that have a poor reputation for sending valid emails. Barracuda Central maintains and manually verifies all IP addresses marked as "poor" on the Barracuda Reputation System.
 <p>This document provides information about the Barracuda Reputation Block List Connector, which facilitates automated interactions, with a Barracuda Reputation Block List server using FortiSOAR&trade; playbooks. Add the Barracuda Reputation Block List Connector as a step in FortiSOAR&trade; playbooks and perform automated operations with Barracuda Reputation Block List.</p>
+
 ### Version information
 
 Connector Version: 1.0.0
@@ -26,14 +27,17 @@ For the procedure to configure a connector, click [here](https://docs.fortinet.c
 <p>In FortiSOAR&trade;, on the Connectors page, click the <strong>Barracuda Reputation Block List</strong> connector row (if you are in the <strong>Grid</strong> view on the Connectors page) and in the <strong>Configurations&nbsp;</strong> tab enter the required configuration details:&nbsp;</p>
 <table border=1><thead><tr><th>Parameter<br></th><th>Description<br></th></tr></thead><tbody><tr><td>DNS Server IP Address<br></td><td>Specify the DNS Server IP Address<br>
 </tbody></table>
+
 ## Actions supported by the connector
 The following automated operations can be included in playbooks and you can also use the annotations to access operations from FortiSOAR&trade; release 4.10.0 and onwards:
 <table border=1><thead><tr><th>Function<br></th><th>Description<br></th><th>Annotation and Category<br></th></tr></thead><tbody><tr><td>Get IP Reputation<br></td><td>Uploads a IP to Barracuda Reputation System and retrieves the analysis results.<br></td><td>get_ip_reputation <br/>Investigation<br></td></tr>
 </tbody></table>
+
 ### operation: Get IP Reputation
 #### Input parameters
 <table border=1><thead><tr><th>Parameter<br></th><th>Description<br></th></tr></thead><tbody><tr><td>Lookup IPv4 Or IPv6<br></td><td>Specify the IP for which you want to retrieve the reputation information.<br>
 </td></tr></tbody></table>
+
 #### Output
 The output contains the following populated JSON schema:
 <code><br>{
