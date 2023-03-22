@@ -15,8 +15,9 @@ Certified: No
 `yum install cyops-connector-barracuda-reputation-block-list`
 
 ## Prerequisites to configuring the connector
-- You must have the URL of Barracuda Reputation Block List server to which you will connect and perform automated operations and credentials to access that server.
-- The FortiSOAR&trade; server should have outbound connectivity to port 443 on the Barracuda Reputation Block List server.
+- Connector is required to be configured with a DNS IP address.
+- Configured DNS server must be reachable from FortiSOAR over UDP 53.
+- Support both IPv4 and IPv6 DNS queries.
 
 ## Minimum Permissions Required
 - N/A
